@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 
-<div align="center"><img src="images/" width="500" height="500"/>
+<div align="center"><img src="images/SA.gif" width="600" height="500"/>
 
 # Sorting algorithms & Big O
 
