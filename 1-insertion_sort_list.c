@@ -8,6 +8,7 @@
 */
 void insertion_sort_list(listint_t **list)
 {
+<<<<<<< HEAD
 	listint_t *aux2 = NULL, *aux_prev = NULL, *aux_next = NULL, *tmp = NULL;
 	int wall = 0;
 
@@ -16,6 +17,15 @@ void insertion_sort_list(listint_t **list)
 
 	tmp = *list;
 
+=======
+	listint_t *tmp;
+	listint_t *aux2 = NULL, *aux_prev = NULL, *aux_next = NULL;
+	int wall = 0;
+
+	if (!list || !*list || !(*list)->next)
+		return;
+	tmp = *list;
+>>>>>>> 69ddf082663856e950d5a251d96758b0cc56b1d2
 	while (tmp)
 	{
 		if (tmp->prev != NULL)
