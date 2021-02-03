@@ -12,7 +12,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *aux2 = NULL, *aux_prev = NULL, *aux_next = NULL;
 	int wall = 0;
 
-	if (!list && !*list)
+	if (!list && !*list && !(*list)->next)
 		return;
 	while (tmp)
 	{
@@ -44,6 +44,6 @@ void insertion_sort_list(listint_t **list)
 					break;
 			}
 		}
-	tmp = tmp->next;
+		tmp = tmp->next;
 	}
 }
