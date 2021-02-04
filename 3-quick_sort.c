@@ -46,9 +46,11 @@ int partition(int *array, int lower, int higher, int size)
  */
 void set_pivot(int *array, int low, int high, int size)
 {
+	int pi = 0;
+
 	if (low < high)
 	{
-		int pi = partition(array, low, high, size);
+		pi = partition(array, low, high, size);
 
 		set_pivot(array, low, pi - 1, size);
 		set_pivot(array, pi + 1, high, size);
@@ -64,5 +66,9 @@ void set_pivot(int *array, int low, int high, int size)
  */
 void quick_sort(int *array, size_t size)
 {
+	if (size < 2)
+	{
+		return;
+	}
 	set_pivot(array, 0, (int)size - 1, (int)size);
 }
