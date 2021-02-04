@@ -44,7 +44,7 @@ int partition(int *array, int lower, int higher, int size)
  * @high: highest number in the array
  * Return: Void - No return
  */
-void set_pivot(int array[], int low, int high, int size)
+void set_pivot(int *array, int low, int high, int size)
 {
 	if (low < high)
 	{
